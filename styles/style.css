@@ -4,11 +4,12 @@ body{
     margin: 0;
     padding: 0%;
 }
-/* header detail */
+/* -------------------
+    header detail
+   ------------------ */
 .header-bg{
-    background: #3a24f3;
+    background: #960c65;
     width: 100%;
-    height: 360px;
     margin-bottom: 40px;
 
 }
@@ -45,7 +46,9 @@ body{
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
 }
-/* Player Details */
+/*-------------------
+    Player Details
+  -------------------- */
 .section-1{
     display: flex;
     justify-content: center;
@@ -80,10 +83,15 @@ body{
     width: 80%;
     margin-bottom: 40px;
 }
-/* sectio-2 world-cup*/
+/* ---------------------
+  Section-2 world-cup
+  ---------------------- */
+.section-2{
+    text-align: center;
+}
 .timeline{
     font-size: 40px;
-    padding-left: 200px;
+   
 }
 .world-cup {
     background-color: white;
@@ -110,7 +118,9 @@ body{
     width: 80px;
     height: 80px;
 }
-/* Fifa Partners */
+/* -----------------
+  Fifa Partners
+  ------------------ */
 .partners{
     text-align: center;
     font-size: 40px;
@@ -127,12 +137,15 @@ body{
     margin-bottom: 40px;
     cursor: pointer;
 }
-/* fotter part */
+/* ----------------
+  fotter part
+  ----------------- */
 footer {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 footer img{
     width: 50%;
@@ -145,19 +158,61 @@ footer img{
     text-align: center;
 }
 .copyright{
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 700;
 }
 /*--------------
     Media Queries
  -------------- */
-/* Mobile-Divices */
+
+/* -----------------
+  Mobile-Devices
+  ----------------- */
 @media only screen and (max-width:688px) {  
-     .header-bg, .top-section, .section-2, .section-3, .players {
-         width: 100%;
+      .players {
+         width: auto;
          display: grid;
-         grid-template-columns: repeat(1, 1fr);
+         grid-template-columns: 1fr;
          align-items: center;
+         
      }   
+    
+     .header-bg{
+         width: 100%;
+     }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        }
+
+    .partners-image {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    }
+
+    .footer{
+        width: 100%;
+        padding: 5%;
+        }
+
+}
+/* -----------------------------------
+   Tablet Devices,Larger Tablet Devices
+  -------------------------------------- */
+@media only screen and (min-width:689px) and (max-width:1050px) {
+    .players {
+         width: auto;
+         display: grid;
+         grid-template-columns:  1fr 1fr;
+         align-items: center;
+    
+    }
+
+    .partners-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
