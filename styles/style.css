@@ -3,6 +3,8 @@ body{
     background-color: rgb(188 217 241);
     margin: 0;
     padding: 0%;
+}
+main{
     overflow-x: hidden;
 }
 /* -------------------
@@ -105,12 +107,12 @@ body{
     margin-top: 20px;
     box-shadow: 1px 1px 15px grey;
     cursor: pointer;
+    padding-left: 10px;
 }
 .world-cup:hover{
     box-shadow: 1px 1px 15px grey;
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
-    overflow: hidden;
     cursor: pointer;
 }
 .mini-design {
@@ -165,29 +167,29 @@ footer img{
     font-size: 16px;
     font-weight: 700;
 }
-/*--------------
-    Media Queries
- -------------- */
+/*-------------------------------
+    Media Queries for Responsive
+ ---------------------------------*/
 
 /* -----------------
   Mobile-Devices
   ----------------- */
 @media only screen and (max-width:688px) {  
-      .players {
-         width: auto;
-         display: grid;
-         grid-template-columns: 1fr;
-         align-items: center;
-     }   
-    
      .header-bg{
          width: 100%;
      }
     .top-section{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         }
+
+    .players {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
 
     .partners-image {
     display: grid;
@@ -198,6 +200,10 @@ footer img{
     .footer{
         width: 100%;
         padding: 5%;
+        }
+
+        .world-cup{
+            padding: 5px;
         }
 
 }
