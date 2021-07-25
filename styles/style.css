@@ -3,6 +3,7 @@ body{
     background-color: rgb(188 217 241);
     margin: 0;
     padding: 0%;
+    overflow-x: hidden;
 }
 /* -------------------
     header detail
@@ -177,7 +178,6 @@ footer img{
          display: grid;
          grid-template-columns: 1fr;
          align-items: center;
-         
      }   
     
      .header-bg{
@@ -210,12 +210,10 @@ footer img{
          display: grid;
          grid-template-columns:  1fr 1fr;
          align-items: center;
-    
     }
 
     .partners-image {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
 }
