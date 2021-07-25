@@ -61,7 +61,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 27px;
     grid-row-gap: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 .player-info {
