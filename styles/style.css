@@ -14,7 +14,7 @@ main{
     background: #960c65;
     width: 100%;
     margin-bottom: 40px;
-
+    padding-bottom: 30px;
 }
 .top-section {
     display: flex;
@@ -61,6 +61,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 27px;
     grid-row-gap: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 .player-info {
