@@ -56,15 +56,12 @@ main{
     display: flex;
     justify-content: center;
 }
-.players{
-    margin-bottom: 50px;
-}
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 27px;
     grid-row-gap: 30px;
-
+    margin-bottom: 50px;
 }
 .player-info {
     background-color: white;
@@ -75,6 +72,9 @@ main{
 }
 .player-info:hover{
     box-shadow: 1px 1px 20px lightslategray;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    cursor:default;
 }
 .player-info img{
     width: 300px;
@@ -203,6 +203,8 @@ footer img{
         }
 
         .world-cup{
+            display: flex;
+            flex-direction: column;
             padding: 5px;
         }
 
@@ -218,6 +220,13 @@ footer img{
          align-items: center;
     }
 
+        .world-cup{
+        width: 59%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-left: 19%;
+    }
     .partners-image {
         display: grid;
         grid-template-columns: 1fr 1fr;
